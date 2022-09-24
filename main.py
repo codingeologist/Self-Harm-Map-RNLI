@@ -79,7 +79,8 @@ def init_map():
     start_coords = (50.90, -1.40)
     m = folium.Map(location=start_coords,
                    zoom_start=10,
-                   tiles=None)
+                   tiles=None,
+                  control_scale=True)
 
     folium.TileLayer(tiles=esri_imagery,
                      attr=esri_attr,
